@@ -1,0 +1,43 @@
+# Go
+/backend/LifeGoTsJsNodeReact
+/backend/*.exe
+/backend/*.dll
+/backend/*.so
+/backend/*.dylib
+/backend/vendor
+/backend/go.sum 
+# Node.js
+/frontend/node_modules
+/frontend/build
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.parcel-cache/
+/frontend/dist/
+/frontend/tmp/
+/frontend/coverage/
+
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.lgtm
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.bak
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

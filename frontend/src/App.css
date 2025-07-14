@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-header {
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.grid-size-input {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.grid-size-input label {
+  margin-right: 5px;
+}
+
+.grid-size-input input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #61dafb;
+  color: #282c34;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+  
+button:hover {
+  background-color: #4fa3d1;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.game-grid-container {
+  border: 2px solid #61dafb;
+  padding: 10px;
+  display: inline-block; /* To shrink to content size */
+  max-width: 90vw; /* Prevent overflow on smaller screens */
+  overflow: auto; /* Enable scrolling for large grids */
+  }
+
+.game-grid {
+  display: grid;
+  gap: 1px; /* Space between cells */
+  background-color: #333; /* Border color for cells */
+}
+
+.grid-cell {
+  width: 20px;
+  height: 20px;
+  background-color: #444; /* Inactive cell color */
+  border: 1px solid #555;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.grid-cell.active {
+  background-color: #a2f896; /* Active cell color */
+  border-color: #7aff7a;
+}
